@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int A, B, C;
-    int sum = 0;
+    int year;
 
     /*
     write your codes here.
