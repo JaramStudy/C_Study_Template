@@ -2,8 +2,11 @@
 
 int main() {
     int A, B;
-/*
-  write your codes here.
-  */
+    scanf("%d %d", &A, &B);
+    printf("%d\n", A + B);
+    printf("%d\n", A - B);
+    printf("%d\n", A * B);
+    printf("%d\n", A / B);
+    printf("%d\n", A % B);
     return 0;
 }
