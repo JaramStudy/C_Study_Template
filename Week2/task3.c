@@ -1,11 +1,14 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int n;
-    
-    /*
-    write your codes here.
-    */
+    scanf("%d", &n);
 
+    for (int i = 2; i <= n; i++) {
+        while (n % i == 0) {
+            printf("%d ", i);
+            n /= i;
+        }
+    }
     return 0;
 }
