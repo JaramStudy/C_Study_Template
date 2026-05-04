@@ -17,7 +17,7 @@ int main() {    // 메인함수는 수정하지 말고, 아래의 TODO 부분을
         scanf("%d", &score[i]);
     
     // output
-    printf("Average: %lf\n", getAverage(score, n));
+    printf("Average: %.2lf\n", getAverage(score, n));
     printf("Max: %d\n", getMax(score, n));
     printf("Min: %d\n", getMin(score, n));
     printf("Grades: ");
