@@ -28,3 +28,40 @@ int main() {    // 메인함수는 수정하지 말고, 아래의 TODO 부분을
 }
 
 // TODO: 위에 선언된 각각의 함수 구현하기
+double getAverage(int score[], int num) {
+    double sum = 0;
+    for (int i = 0; i < num; i++)
+        sum += score[i];
+    return sum / num ;
+}
+
+int getMax(int score[], int num) {
+    int max = 0;
+    for (int i = 0; i<num; i++)
+        if (score[i] > max)
+            max = score[i];
+
+    return max;
+}
+
+int getMin(int score[], int num) {
+    int min = 100;
+    for (int i = 0; i<num; i++)
+        if (score[i] < min)
+            min = score[i];
+    
+    return min;
+}
+
+char getGrade(i_score) {
+    if (i_score >= 90)
+        return 'A';
+    else if (i_score >= 80)
+        return 'B';
+    else if (i_score >= 70)
+        return 'C';
+    else if (i_score >= 60)
+        return 'D';
+    else
+        return 'F';
+}
