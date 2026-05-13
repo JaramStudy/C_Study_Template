@@ -5,15 +5,18 @@
 int main() {
     char buffer[MAX];
     // fgets를 사용해 줄 단위로 입력
-
+    fgets(buffer, sizeof(buffer), stdin);
     // 개행문자 제거
     buffer[strcspn(buffer, "\n")] = '\0';
     // 출력: 각 요구사항을 한 줄 씩 출력
     // 입력받은 문자열
-
+    printf("%s\n", buffer);
     // 문자열의 길이
-
+    printf("%d\n", strlen(buffer));
     // Jaram 이 포함되면 Yes, 아니면 No 출력
-
+    if(strstr(buffer, "Jaram"))
+        printf("Yes\n");
+    else
+        printf("No\n");
     return 0;
 }
